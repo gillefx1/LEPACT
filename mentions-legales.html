@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales | CYOS</title>
+    <!-- Importation des polices élégantes de l'écosystème CYOS -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+            background-color: #fcfbfa; /* Blanc chaud / Ivoire identique au Hub */
+            color: #333230; /* Anthracite doux */
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* ==========================================================================
+           1. EN-TÊTE / NAVIGATION
+           ========================================================================== */
+        .main-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 8%;
+            background-color: #fcfbfa;
+            border-bottom: 1px solid rgba(51, 50, 48, 0.08);
+        }
+        .main-header .logo img {
+            height: 60px;
+            width: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .main-header .logo img:hover {
+            transform: scale(1.02);
+        }
+
+        /* ==========================================================================
+           2. CONTENU TEXTUEL (STYLE RÉDACTIONNEL ÉLÉGANT)
+           ========================================================================== */
+        .legal-main {
+            flex: 1;
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #1a1a19;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .legal-subtitle {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #8c857b;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #1a1a19;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(51, 50, 48, 0.1);
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 0.95rem;
+            color: #595754;
+            margin-bottom: 15px;
+            font-weight: 300;
+            text-align: justify;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            color: #595754;
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        a {
+            color: #8c857b;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #1a1a19;
+        }
+
+        /* ==========================================================================
+           3. PIED DE PAGE REGLEMENTAIRE
+           ========================================================================== */
+        .hub-footer {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 30px 20px;
+            background-color: #fcfbfa;
+            border-top: 1px solid rgba(51, 50, 48, 0.08);
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .hub-footer a {
+            color: #8c857b;
+        }
+        .hub-footer a:hover,
+        .hub-footer a.active {
+            color: #1a1a19;
+        }
+        .hub-footer span {
+            color: rgba(51, 50, 48, 0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .legal-main { margin: 40px auto; }
+            .hub-footer { gap: 15px; flex-wrap: wrap; }
+            .hub-footer span { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu de Navigation (Logo redirigeant vers l'index global) -->
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="CYOS Global Logo">
+            </a>
+        </div>
+    </header>
+
+    <!-- Contenu des Mentions Légales -->
+    <main class="legal-main">
+        <h1>Mentions Légales</h1>
+        <p class="legal-subtitle">En vigueur au 16 septembre 2026</p>
+
+        <p>Conformément aux dispositions de l'article III.74 du Code de droit économique belge, les utilisateurs du site internet <strong>www.cyos.be</strong> sont informés de l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.</p>
+
+        <h2>1. Éditeur du site</h2>
+        <p>Le présent site internet est édité et exploité par :</p>
+        <ul>
+            <li><strong>Dénomination sociale :</strong> CYOS SRL (en cours de constitution)</li>
+            <li><strong>Forme juridique :</strong> Société à Responsabilité Limitée (SRL)</li>
+            <li><strong>Siège social :</strong> 4 rue sous les Falaises, 5537 Anhée, Belgique</li>
+            <li><strong>Fondateurs et Secrétaires de rédaction :</strong> Tatiana FAELES &amp; François GILLES</li>
+            <li><strong>Adresse de courrier électronique :</strong> <a href="mailto:info@cyos.be">info@cyos.be</a></li>
+            <li><strong>Numéro d'entreprise / TVA :</strong> En cours d'attribution auprès de a Banque-Carrefour des Entreprises (BCE)</li>
+        </ul>
+
+        <h2>2. Hébergement du site</h2>
+        <p>Le site internet est hébergé de manière statique et sécurisée par :</p>
+        <ul>
+            <li><strong>Hébergeur :</strong> GitHub Inc.</li>
+            <li><strong>Adresse :</strong> 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</li>
+            <li><strong>Site internet :</strong> <a href="https://github.com" target="_blank" rel="noopener noreferrer">https://github.com</a></li>
+        </ul>
+
+        <h2>3. Propriété intellectuelle</h2>
+        <p>L'ensemble de ce site (structure, mise en page, logos, textes, images, graphismes et icônes) est protégé par la législation belge et internationale relative aux droits d'auteur et à la propriété intellectuelle. Toute reproduction, représentation, modification ou adaptation totale ou partielle de ses éléments, par quelque procédé que ce soit, est strictement interdite sans l'autorisation écrite préalable des fondateurs de la SRL CYOS.</p>
+
+        <h2>4. Responsabilité</h2>
+        <p>L'éditeur s'efforce de fournir des informations aussi précises que possible sur l'ensemble de ses activités événementielles. Toutefois, il ne saurait être tenu responsable des omissions, des inexactitudes ou des carences dans la mise à jour des contenus. Le site internet peut contenir des liens hypertextes redirigeant vers ses filiales (www.cyos-event.be et www.cyos-heritage.be) ; la navigation sur ces plateformes est soumise à leurs propres conditions d'utilisation.</p>
+
+        <h2>5. Droit applicable et juridiction</h2>
+        <p>Les présentes mentions légales sont régies par le droit belge. En cas de litige relatif à l'interprétation ou à l'exécution des présentes, et à défaut de résolution amiable, les tribunaux de l'arrondissement judiciaire du siège social de l'entreprise seront seuls compétents.</p>
+    </main>
+
+    <!-- Liens réglementaires bas de page interconnectés -->
+    <footer class="hub-footer">
+        <a href="mentions-legales.html" class="active">Mentions Légales</a>
+        <span>|</span>
+        <a href="cgv.html">CGV</a>
+        <span>|</span>
+        <a href="politique-confidentialite.html">Confidentialité</a>
+        <span>|</span>
+        <a href="index.html" class="active">Acceuil</a>
+    </footer>
+
+</body>
+</html>

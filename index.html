@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYOS - Organisation d'événements privés</title>
+    <!-- Importation de Montserrat et Playfair Display pour garantir la même typographie premium qu'Heritage -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* ==========================================================================
+           CORRECTION ALIGNEMENT & SYMÉTRIE DES BOUTONS HERO (LOOK HERITAGE)
+           ========================================================================== */
+        .hero-section {
+            background: linear-gradient(rgba(252, 251, 250, 0.85), rgba(252, 251, 250, 0.85)), url('https://unsplash.com') center/cover;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            letter-spacing: 3px;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: #1a1a19;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .hero-content .hero-subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #8c857b; /* Teinte taupe/bronze CYOS d'origine */
+            margin-bottom: 35px;
+            font-weight: 400;
+        }
+        .hero-content .hero-description {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.05rem;
+            max-width: 700px;
+            line-height: 1.8;
+            color: #595754;
+            font-weight: 300;
+            margin: 0 auto 45px auto;
+        }
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        /* Structure de bouton unifiée pour forcer des dimensions strictement identiques */
+        .hero-buttons .btn {
+            font-family: 'Montserrat', sans-serif;
+            display: inline-block;
+            width: 260px; /* Force la même largeur sur les deux blocs */
+            padding: 14px 0; /* Même hauteur interne */
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+        /* Bouton Plein Doré/Bronze d'origine (Découvrir nos prestations) */
+        .hero-buttons .btn-primary {
+            background-color: #bfa38a; /* Restauration de ta couleur beige/doré d'origine */
+            color: #ffffff;
+            border: 1px solid #bfa38a;
+        }
+        .hero-buttons .btn-primary:hover {
+            background-color: #8c857b;
+            border-color: #8c857b;
+        }
+        /* Bouton Épuré Contour (Discuter de mon projet) */
+        .hero-buttons .btn-secondary {
+            background-color: transparent;
+            color: #bfa38a;
+            border: 1px solid #bfa38a;
+        }
+        .hero-buttons .btn-secondary:hover {
+            background-color: #bfa38a;
+            color: #ffffff;
+        }
+
+        /* AJUSTEMENT DUR RESPONSIVE POUR MOBILE & SMARTPHONE (CENTRAGE STRICT IPHONE) */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 20px;
+            }
+            .hero-content h1 { 
+                font-size: 2.2rem; 
+            }
+            .hero-content .hero-subtitle { 
+                font-size: 1rem; 
+                margin-bottom: 25px;
+            }
+            .hero-content .hero-description {
+                font-size: 0.95rem;
+                margin-bottom: 35px;
+                max-width: 100%;
+            }
+            /* Crée un empilement vertical fluide et force l'alignement centré */
+            .hero-buttons { 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 15px; 
+            }
+            .hero-buttons .btn { 
+                width: 100%; 
+                max-width: 280px; 
+                margin: 0 auto; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Menu de Navigation Linéaire Épuré (Look Heritage & 100% Fiable sur Mobile) -->
+<header class="main-header">
+    <div class="logo">
+        <a href="https://cyos.be">
+            <img src="assets/images/logo.png" alt="Logo CYOS" class="logo"> 
+        </a>
+    </div>
+    <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Nos Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="home-main">
+    <!-- Section d'accueil réorganisée selon tes souhaits -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Choose Your Own Story</h1>
+            <p class="hero-subtitle">L'art d'orchestrer vos plus beaux moments de vie.</p>
+            <p class="hero-description">De l'idée originale à la coordination du jour J, nous façonnons des événements uniques et sur-mesure avec une élégance et un raffinement qui vous ressemblent.</p>
+            <div class="hero-buttons">
+                <a href="services.html" class="btn btn-primary">Découvrir nos prestations</a>
+                <a href="contact.html" class="btn btn-secondary">Discuter de mon projet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 : Les Engagements / Points forts -->
+    <section class="features-section">
+        <div class="section-title">
+            <h2>L'accompagnement CYOS</h2>
+            <p>Pourquoi nous confier votre projet ?</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3>Sur-mesure</h3>
+                <p>Chaque événement est une feuille blanche. Nous concevons une ambiance unique qui vous ressemble à 100%.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🌿</div>
+                <h3>Sérénité totale</h3>
+                <p>Finis le stress et la course aux prestataires. Nous gérons toute la logistique pour vous laisser savourer l'instant.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🤝</div>
+                <h3>Réseau d'experts</h3>
+                <p>Nous collaborons uniquement avec des partenaires de confiance sélectionnés pour leur rigueur et leur passion.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 : Appel à l'action final -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Prêt à donner vie à votre événement ?</h2>
+            <p>Mariage, anniversaire, baptême... confiez-nous vos envies et laissez la magie opérer.</p>
+            <a href="contact.html" class="btn-card">Demander un devis gratuit</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-google-reviews">
+            <div class="google-logo">
+                <span style="color: #4285F4">G</span><span style="color: #EA4335">o</span><span style="color: #FBBC05">o</span><span style="color: #4285F4">g</span><span style="color: #34A853">l</span><span style="color: #EA4335">e</span>
+                <span class="review-title">Avis Clients</span>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p class="rating-text">Note globale : <strong>4.9/5</strong> sur la base de nos événements</p>
+            <a href="https://g.page/r/CS8VQkUT9cPZECE/review" target="_blank" rel="noopener noreferrer" class="btn-google">Laisser un avis</a>
+        </div>
+
+        <div class="footer-separator"></div>
+
+        <p>&copy; 2026 CYOS - Event. Tous droits réservés.</p>
+        
+        <!-- Liens pour une ouverture directe sur le site actuel -->
+        <div class="footer-links">
+            <a href="mentions-legales.html">Mentions Légales</a> | 
+            <a href="cgv.html">CGV</a> | 
+            <a href="politique-confidentialite.html">Confidentialité</a> | 
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
