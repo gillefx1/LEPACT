@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Pact - Gîte de charme en Ardenne</title>
+    <!-- Tailwind CSS pour un design moderne et rapide -->
+    <script src="https://jsdelivr.net"></script>
+    <style>
+        /* Ajustements pour intégrer harmonieusement le widget Smoobu */
+        .smoobu-container iframe {
+            width: 100% !important;
+            border: none !important;
+            background: transparent !important;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+
+    <!-- Navbar -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold tracking-widest text-stone-900 uppercase">Le Pact</a>
+            <nav class="hidden md:flex space-x-8 font-medium text-sm tracking-wide uppercase">
+                <a href="#" class="text-stone-900 border-b-2 border-stone-900 pb-1">Accueil</a>
+                <a href="#gite" class="text-stone-600 hover:text-stone-900 transition">Le Gîte</a>
+                <a href="#reservation" class="text-stone-600 hover:text-stone-900 transition">Réservation</a>
+                <a href="#contact" class="text-stone-600 hover:text-stone-900 transition">Contact</a>
+            </nav>
+            <a href="#reservation" class="bg-stone-900 text-white px-5 py-2.5 rounded-sm text-xs font-semibold uppercase tracking-wider hover:bg-stone-800 transition">
+                Réserver
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[70vh] flex items-center justify-center bg-stone-900 text-white overflow-hidden">
+        <!-- Image de fond temporaire (à remplacer par une photo de votre gîte dans votre dépôt GitHub) -->
+        <img src="https://unsplash.com" 
+             alt="Gîte Le Pact" 
+             class="absolute inset-0 w-full h-full object-cover opacity-40">
+        
+        <div class="relative max-w-4xl mx-auto text-center px-4">
+            <span class="text-xs uppercase tracking-widest font-semibold text-stone-300 block mb-3">Bienvenue au gîte</span>
+            <h1 class="text-4xl md:text-6xl font-light tracking-tight mb-6">Le Pact</h1>
+            <p class="text-lg md:text-xl font-light text-stone-200 max-w-2xl mx-auto leading-relaxed">
+                Une parenthèse exclusive au cœur de la nature, alliant confort moderne et charme authentique.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Présentation -->
+    <section id="gite" class="py-20 max-w-5xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-light tracking-tight text-stone-900 mb-6">Votre séjour en toute sérénité</h2>
+                <p class="text-stone-600 leading-relaxed mb-4">
+                    Idéalement situé pour explorer la région, notre gîte a été entièrement pensé pour vous offrir un séjour inoubliable. Que ce soit pour un week-end de déconnexion ou des vacances prolongées, profitez d'infrastructures de qualité.
+                </p>
+                <div class="grid grid-cols-2 gap-4 pt-4 border-t border-stone-200 text-sm text-stone-600">
+                    <div>✓ Capacité modulable</div>
+                    <div>✓ Cuisine équipée</div>
+                    <div>✓ Grand confort</div>
+                    <div>✓ Connexion Wi-Fi</div>
+                </div>
+            </div>
+            <div class="bg-stone-200 h-80 rounded-sm overflow-hidden shadow-inner">
+                <!-- Emplacement photo secondaire -->
+                <img src="https://unsplash.com" alt="Intérieur du gîte" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Réservation DIRECTE (Interface Smoobu) -->
+    <section id="reservation" class="py-20 bg-stone-100 border-y border-stone-200">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-light tracking-tight text-stone-900 mb-2">Réserver en direct</h2>
+                <p class="text-stone-500 text-sm">Meilleurs tarifs garantis, sans frais de plateforme intermédiaires.</p>
+            </div>
+            
+            <!-- CONTENEUR DU WIDGET SMOOBU -->
+            <div class="bg-white p-6 md:p-8 rounded-sm shadow-md border border-stone-200 smoobu-container">
+                
+                <!-- ⚠️ REMPLACEZ LES 3 LIGNES CI-DESSOUS PAR VOTRE CODE COPIÉ SUR SMOOBU -->
+<div id="apartmentIframe3521476">
+<script type="text/javascript" src="https://login.smoobu.com/js/Settings/BookingToolIframe.js"></script>
+<script>BookingToolIframe.initialize({"url": "https://login.smoobu.com/fr/booking-tool/iframe/1898066/3521476", "baseUrl": "https://login.smoobu.com", "target": "#apartmentIframe3521476"})</script>
+</div>
+                <!-- FIN DE L'EMPLACEMENT DU WIDGET -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-stone-900 text-stone-400 py-12 text-sm">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-white font-semibold uppercase tracking-wider text-xs mb-4">Le Pact</h4>
+                <p class="leading-relaxed">Votre adresse de déconnexion en Belgique.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold uppercase tracking-wider text-xs mb-4">Contact & Liens</h4>
+                <p class="mb-2">📍 Anhée, Belgique</p>
+                <p>🌐 <a href="https://lepact.be" class="hover:text-white transition">www.lepact.be</a></p>
+            </div>
+            <div class="text-xs text-stone-500 md:text-right flex flex-col justify-between">
+                <div>© 2026 Le Pact. Tous droits réservés.</div>
+                <div class="mt-2">Propulsé par GitHub Pages & Smoobu</div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
