@@ -1,11 +1,11 @@
 /**
  * @filesource       /assets/js/accordion.js
- * @description      Gestion dynamique multi-accordéons responsive (Mobile-first)
+ * @description      Gestion dynamique multi-accordéons avec défilement automatique (Effet CYOS)
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Sélectionne tous les blocs d'accordéons de la page
-    const accordions = document.querySelectorAll('.js-accordion');
+    // Détecte l'accordéon de la page d'accueil (#portfolio-accordion) et ceux de la page galerie (.js-accordion)
+    const accordions = document.querySelectorAll('#portfolio-accordion, .js-accordion');
     
     if (accordions.length === 0) return;
 
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let currentIndex = 0;
         let autoPlayInterval;
 
-        // Fonction pour changer le volet actif
+        // Fonction pour activer un volet et déclencher le zoom CSS
         function activateItem(index) {
             items.forEach((item, idx) => {
                 if (idx === index) {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             currentIndex = index;
         }
 
-        // Cycle de rotation automatique (4 secondes)
+        // Cycle de rotation automatique (toutes les 4 secondes)
         function startCycle() {
             autoPlayInterval = setInterval(() => {
                 let nextIndex = (currentIndex + 1) % items.length;
@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
             clearInterval(autoPlayInterval);
         }
 
-        // Événements pour ordinateur (survol) et mobile (tactile)
+        // Interactions humaines (Souris sur PC, Tactile sur smartphone/tablette)
         items.forEach((item, index) => {
             const handleInteraction = () => {
-                stopCycle();
+                stopCycle(); // On coupe le défilement automatique si l'utilisateur interagit
                 activateItem(index);
             };
 
@@ -51,11 +51,11 @@ document.addEventListener('DOMContentLoaded', function() {
             item.addEventListener('touchstart', handleInteraction, { passive: true });
 
             item.addEventListener('mouseleave', () => {
-                startCycle();
+                startCycle(); // On relance le défilement automatique quand la souris s'en va
             });
         });
 
-        // Lancement initial de l'accordéon individuel
+        // Lancement initial de la rotation sur cet accordéon
         startCycle();
     });
 });
