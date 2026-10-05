@@ -6,15 +6,78 @@ img { max-width: 100%; height: auto; display: block; }
 .max-w-6xl { max-w: 1140px; margin: 0 auto; padding: 0 20px; }
 .max-w-4xl { max-w: 800px; margin: 0 auto; padding: 0 20px; }
 
-/* Navigation */
-header { background-color: rgba(255, 255, 255, 0.95); border-b: 1px solid #e7e5e4; position: sticky; top: 0; z-index: 100; }
-.nav-container { display: flex; justify-content: space-between; align-items: center; height: 80px; }
-.logo { font-size: 24px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #1c1917; }
-nav { display: flex; gap: 25px; }
-nav a { font-size: 13px; font-weight: 500; text-transform: uppercase; color: #57534e; transition: color 0.2s; }
-nav a:hover, nav a.active { color: #1c1917; border-bottom: 2px solid #1c1917; padding-bottom: 4px; }
-.btn-reserve { background-color: #1c1917; color: #ffffff !important; padding: 10px 20px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 2px; transition: background 0.2s; }
-.btn-reserve:hover { background-color: #44403c; }
+/* Navigation Responsive */
+header { 
+    background-color: rgba(255, 255, 255, 0.95); 
+    border-b: 1px solid #e7e5e4; 
+    position: sticky; 
+    top: 0; 
+    z-index: 100; 
+}
+.nav-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    height: 80px; 
+    max-width: 1140px; 
+    margin: 0 auto; 
+    padding: 0 15px; 
+}
+.logo { 
+    font-size: 18px; /* Plus compact sur mobile pour éviter les chevauchements */
+    font-weight: 700; 
+    letter-spacing: 0.05em; 
+    text-transform: uppercase; 
+    color: #1c1917; 
+    white-space: nowrap;
+}
+nav { 
+    display: none; /* Masqué par défaut sur mobile pour épurer l'écran */
+    gap: 20px; 
+}
+nav a { 
+    font-size: 13px; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    color: #57534e; 
+    transition: color 0.2s; 
+}
+nav a:hover, nav a.active { 
+    color: #1c1917; 
+    border-bottom: 2px solid #1c1917; 
+    padding-bottom: 4px; 
+}
+.btn-reserve { 
+    background-color: #1c1917; 
+    color: #ffffff !important; 
+    padding: 8px 14px; 
+    font-size: 11px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    letter-spacing: 0.05em; 
+    border-radius: 2px; 
+    transition: background 0.2s; 
+    white-space: nowrap;
+}
+.btn-reserve:hover { 
+    background-color: #44403c; 
+}
+
+/* Affichage Tablettes et Ordinateurs (Écrans supérieurs à 768px) */
+@media (min-width: 768px) {
+    .logo { 
+        font-size: 24px; 
+        letter-spacing: 0.1em; 
+    }
+    nav { 
+        display: flex; /* Les liens réapparaissent proprement sur grand écran */
+    }
+    .btn-reserve { 
+        padding: 10px 20px; 
+        font-size: 12px; 
+    }
+}
+
 
 /* En-tête des pages */
 .page-header { background-color: #1c1917; color: #ffffff; padding: 60px 0; text-align: center; }
