@@ -21,16 +21,17 @@
         </div>
     </header>
 
-    <!-- Section Hero (Accueil) avec image locale ou distante alternative -->
-    <section style="position: relative; height: 60vh; min-height: 400px; display: flex; align-items: center; justify-content: center; background-color: #1c1917; color: #ffffff; text-align: center; overflow: hidden;">
+    <!-- Section Hero -->
+    <section class="hero" style="position: relative; height: 60vh; min-height: 400px; display: flex; align-items: center; justify-content: center; background-color: #1c1917; color: #ffffff; text-align: center; overflow: hidden;">
         <img src="https://unsplash.com" alt="Gîte Le Pact" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.45;">
         <div style="position: relative; z-index: 10; max-width: 700px; padding: 0 20px;">
-            <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.2em; color: #d6d3d1; display: block; margin-bottom: 10px;">Bienvenue au gîte</span>
+            <span>Bienvenue au gîte</span>
             <h1 style="font-size: 48px; font-weight: 300; letter-spacing: -0.02em; margin-bottom: 20px;">Le Pact</h1>
             <p style="font-size: 18px; color: #e7e5e4; font-weight: 300;">Une parenthèse exclusive au cœur de la nature, alliant confort moderne et charme authentique.</p>
         </div>
     </section>
 
+    <!-- Présentation -->
     <section class="section-padding" style="background-color: #fafaf9;">
         <div class="max-w-6xl grid-2">
             <div>
@@ -54,17 +55,26 @@
         <div class="max-w-6xl" style="text-align: center;">
             <h2 style="font-size: 32px; font-weight: 300; color: #1c1917; margin-bottom: 10px;">Découvrir le gîte en images</h2>
             <p style="font-size: 14px; color: #78716c; margin-bottom: 40px;">Un aperçu des espaces de vie intérieurs et extérieurs.</p>
-            
             <div class="gallery-grid">
-                <!-- Remplacer les src par vos fichiers dans assets/photos/ -->
                 <div class="card-img" style="height: 250px;"><img src="https://unsplash.com" alt="Salon"></div>
                 <div class="card-img" style="height: 250px;"><img src="https://unsplash.com" alt="Cuisine"></div>
                 <div class="card-img" style="height: 250px;"><img src="https://unsplash.com" alt="Chambre"></div>
                 <div class="card-img" style="height: 250px;"><img src="https://unsplash.com" alt="Salle de bain"></div>
             </div>
+        </div>
+    </section>
+
+    <!-- Section Réservation Intégrée sur l'Accueil -->
+    <section class="section-padding" style="background-color: #f5f5f4; border-top: 1px solid #e7e5e4;">
+        <div class="max-w-4xl" style="text-align: center;">
+            <h2 style="font-size: 32px; font-weight: 300; color: #1c1917; margin-bottom: 10px;">Vérifier les disponibilités & Réserver</h2>
+            <p style="font-size: 14px; color: #78716c; margin-bottom: 30px;">Planifiez vos dates en direct. Notre calendrier bloque instantanément vos nuitées sur Airbnb, Booking et Ardennes-étape.</p>
             
-            <div style="margin-top: 40px;">
-                <a href="reservation.html" class="btn-reserve" style="display: inline-block;">Consulter les disponibilités</a>
+            <div class="smoobu-container" style="min-height: 680px;">
+                <div id="apartmentIframeHome">
+                    <script type="text/javascript" src="https://smoobu.com"></script>
+                    <script>BookingToolIframe.initialize({"url": "https://smoobu.com", "baseUrl": "https://smoobu.com", "target": "#apartmentIframeHome"})</script>
+                </div>
             </div>
         </div>
     </section>
