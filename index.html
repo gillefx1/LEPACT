@@ -3,134 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>* Le Pact * - Gîte de charme en Ardenne</title>
-    
-    <!-- CSS INTÉGRÉ : ZÉRO CHARGEMENT EXTERNE, AFFICHAGE INSTANTANÉ -->
-    <style>
-        /* Styles Généraux */
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f5f5f4; color: #44403c; line-height: 1.6; }
-        a { text-decoration: none; color: inherit; }
-        img { max-width: 100%; height: auto; display: block; }
-        .max-w-6xl { max-w: 1140px; margin: 0 auto; padding: 0 20px; }
-        .max-w-4xl { max-w: 800px; margin: 0 auto; padding: 0 20px; }
-
-        /* Navigation */
-        header { background-color: rgba(255, 255, 255, 0.95); border-b: 1px solid #e7e5e4; position: sticky; top: 0; z-index: 100; }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; h: 80px; height: 80px; }
-        .logo { font-size: 24px; font-weight: 700; tracking-spacing: 0.1em; text-transform: uppercase; color: #1c1917; }
-        nav { display: flex; gap: 30px; }
-        nav a { font-size: 14px; font-weight: 500; text-transform: uppercase; color: #57534e; transition: color 0.2s; }
-        nav a:hover { color: #1c1917; }
-        .btn-reserve { background-color: #1c1917; color: #ffffff !important; padding: 10px 20px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 2px; transition: background 0.2s; }
-        .btn-reserve:hover { background-color: #44403c; }
-
-        /* Section Hero (Accueil) */
-        .hero { position: relative; height: 60vh; min-height: 400px; display: flex; align-items: center; justify-content: center; background-color: #1c1917; color: #ffffff; text-align: center; overflow: hidden; }
-        .hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.45; }
-        .hero-content { position: relative; z-index: 10; max-width: 700px; }
-        .hero-content span { font-size: 12px; text-transform: uppercase; letter-spacing: 0.2em; color: #d6d3d1; display: block; margin-bottom: 10px; }
-        .hero-content h1 { font-size: 48px; font-weight: 300; letter-spacing: -0.02em; margin-bottom: 20px; }
-        .hero-content p { font-size: 18px; color: #e7e5e4; font-weight: 300; }
-
-        /* Section Gîte (Présentation) */
-        .gite-section { padding: 80px 0; background-color: #fafaf9; }
-        .grid-2 { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; }
-        @media (min-width: 768px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
-        .gite-section h2 { font-size: 32px; font-weight: 300; color: #1c1917; margin-bottom: 20px; }
-        .gite-section p { color: #57534e; margin-bottom: 20px; }
-        .features { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; padding-top: 20px; border-top: 1px solid #e7e5e4; font-size: 14px; color: #57534e; }
-        .img-container { background-color: #e7e5e4; height: 350px; border-radius: 2px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
-        .img-container img { width: 100%; height: 100%; object-fit: cover; }
-
-        /* Section Réservation (Smoobu) */
-        .booking-section { padding: 80px 0; background-color: #f5f5f4; border-top: 1px solid #e7e5e4; border-bottom: 1px solid #e7e5e4; text-align: center; }
-        .booking-section h2 { font-size: 32px; font-weight: 300; color: #1c1917; margin-bottom: 10px; }
-        .booking-section .subtitle { font-size: 14px; color: #78716c; margin-bottom: 40px; }
-        .smoobu-card { background-color: #ffffff; padding: 20px; border-radius: 4px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); border: 1px solid #e7e5e4; text-align: left; }
-        
-        /* Ajustements d'intégration Smoobu */
-        .smoobu-card iframe { width: 100% !important; border: none !important; background: transparent !important; min-height: 550px; }
-
-        /* Footer */
-        footer { background-color: #1c1917; color: #a8a29e; padding: 60px 0; font-size: 14px; }
-        .footer-grid { display: grid; grid-template-columns: 1fr; gap: 40px; }
-        @media (min-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr 1fr; } }
-        footer h4 { color: #ffffff; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 20px; }
-        footer p { margin-bottom: 10px; }
-        footer a { color: #e7e5e4; text-decoration: underline; }
-        footer a:hover { color: #ffffff; }
-        .footer-right { display: flex; flex-direction: column; justify-content: space-between; }
-        @media (min-width: 768px) { .footer-right { text-align: right; } }
-        .copyright-meta { margin-top: 20px; font-size: 12px; color: #78716c; }
-    </style>
+    <title>Le Pact - Gîte de charme en Ardenne</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <!-- Barre de navigation -->
     <header>
         <div class="max-w-6xl nav-container">
-            <a href="#" class="logo">Le Pact</a>
+            <a href="index.html" class="logo">Le Pact</a>
             <nav>
-                <a href="#">Accueil</a>
-                <a href="#gite">Le Gîte</a>
-                <a href="#reservation">Réservation</a>
-                <a href="#reservation">Contact</a>
+                <a href="index.html" class="active">Le Gîte</a>
+                <a href="services.html">Services</a>
+                <a href="activites.html">Activités</a>
+                <a href="contact.html">Contact</a>
             </nav>
-            <a href="#reservation" class="btn-reserve">Réserver</a>
+            <a href="reservation.html" class="btn-reserve">Réserver</a>
         </div>
     </header>
 
-    <!-- Section d'accueil (Hero) -->
-    <section class="hero">
-        <img src="assets/photos/Portail.jpeg" 
-             alt="Gîte Le Pact" class="hero-img">
-        <div class="hero-content">
-            <span>Bienvenue au gîte</span>
-            <h1>* Le Pact *</h1>
-            <p>Une parenthèse exclusive au cœur de la nature, alliant confort moderne et charme authentique.</p>
+    <!-- Section Hero (Accueil) avec image locale ou distante alternative -->
+    <section style="position: relative; height: 60vh; min-height: 400px; display: flex; align-items: center; justify-content: center; background-color: #1c1917; color: #ffffff; text-align: center; overflow: hidden;">
+        <img src="https://unsplash.com" alt="Gîte Le Pact" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.45;">
+        <div style="position: relative; z-index: 10; max-width: 700px; padding: 0 20px;">
+            <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.2em; color: #d6d3d1; display: block; margin-bottom: 10px;">Bienvenue au gîte</span>
+            <h1 style="font-size: 48px; font-weight: 300; letter-spacing: -0.02em; margin-bottom: 20px;">Le Pact</h1>
+            <p style="font-size: 18px; color: #e7e5e4; font-weight: 300;">Une parenthèse exclusive au cœur de la nature, alliant confort moderne et charme authentique.</p>
         </div>
     </section>
 
-    <!-- Section Présentation -->
-    <section id="gite" class="gite-section">
+    <section class="section-padding" style="background-color: #fafaf9;">
         <div class="max-w-6xl grid-2">
             <div>
-                <h2>Votre séjour en toute sérénité</h2>
-                <p>Idéalement situé pour explorer notre belle région, notre gîte a été entièrement pensé pour vous offrir un séjour inoubliable. Que ce soit pour un week-end de déconnexion ou des vacances prolongées, profitez d'infrastructures de qualité.</p>
-                <div class="features">
+                <h2 style="font-size: 32px; font-weight: 300; color: #1c1917; margin-bottom: 20px;">Votre séjour en toute sérénité</h2>
+                <p style="color: #57534e; margin-bottom: 20px;">Idéalement situé à Anhée pour explorer notre belle région de la Haute-Meuse, notre gîte a été entièrement pensé pour vous offrir un séjour inoubliable. Que ce soit pour un week-end de déconnexion totale ou des vacances prolongées, profitez d'infrastructures haut de gamme.</p>
+                <div class="features" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; padding-top: 20px; border-top: 1px solid #e7e5e4; font-size: 14px; color: #57534e;">
                     <div>✓ Capacité modulable</div>
-                    <div>✓ Cuisine équipée</div>
-                    <div>✓ Grand confort</div>
-                    <div>✓ Connexion Wi-Fi</div>
+                    <div>✓ Cuisine super-équipée</div>
+                    <div>✓ Grand confort & design</div>
+                    <div>✓ Connexion Wi-Fi rapide</div>
                 </div>
             </div>
-            <div class="img-container">
-                <img src="assets/photos/Terrasse-sam.jpeg" alt="Intérieur du gîte">
+            <div class="card-img" style="height: 380px; border-radius: 2px;">
+                <img src="https://unsplash.com" alt="Intérieur du gîte Le Pact">
             </div>
         </div>
     </section>
 
-    <!-- Section Réservation DIRECTE (Smoobu intégré) -->
-    <section id="reservation" class="booking-section">
-        <div class="max-w-4xl">
-            <h2>Réserver en direct</h2>
-            <p class="subtitle">Meilleurs tarifs garantis, sans frais de plateforme intermédiaires.</p>
+    <!-- Galerie Photos -->
+    <section class="section-padding" style="background-color: #ffffff; border-top: 1px solid #e7e5e4;">
+        <div class="max-w-6xl" style="text-align: center;">
+            <h2 style="font-size: 32px; font-weight: 300; color: #1c1917; margin-bottom: 10px;">Découvrir le gîte en images</h2>
+            <p style="font-size: 14px; color: #78716c; margin-bottom: 40px;">Un aperçu des espaces de vie intérieurs et extérieurs.</p>
             
-            <!-- CONTENEUR DU WIDGET SMOOBU -->
-            <div id="apartmentIframeAll">
-<script type="text/javascript" src="https://login.smoobu.com/js/Settings/BookingToolIframe.js"></script>
-<script>BookingToolIframe.initialize({"url": "https://login.smoobu.com/fr/booking-tool/iframe/1898066", "baseUrl": "https://login.smoobu.com", "target": "#apartmentIframeAll"})</script>
-</div>
+            <div class="gallery-grid">
+                <!-- Remplacer les src par vos fichiers dans assets/photos/ -->
+                <div class="card-img" style="height: 250px;"><img src="https://unsplash.com" alt="Salon"></div>
+                <div class="card-img" style="height: 250px;"><img src="https://unsplash.com" alt="Cuisine"></div>
+                <div class="card-img" style="height: 250px;"><img src="https://unsplash.com" alt="Chambre"></div>
+                <div class="card-img" style="height: 250px;"><img src="https://unsplash.com" alt="Salle de bain"></div>
+            </div>
+            
+            <div style="margin-top: 40px;">
+                <a href="reservation.html" class="btn-reserve" style="display: inline-block;">Consulter les disponibilités</a>
+            </div>
         </div>
     </section>
 
-    <!-- Pied de page -->
     <footer>
-        <div class="max-w-6xl footer-grid">
+        <div class="max-w-6xl grid-3">
             <div>
                 <h4>Le Pact</h4>
-                <p>Votre adresse de déconnexion en Belgique.</p>
+                <p>Votre adresse de déconnexion exclusive en Belgique.</p>
             </div>
             <div>
                 <h4>Contact & Liens</h4>
