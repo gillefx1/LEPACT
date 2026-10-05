@@ -48,10 +48,54 @@
                     <div>♿ Accessible aux personnes à mobilité réduite</div>
                 </div>
             </div>
-            <div class="card-img" style="height: 440px; border-radius: 2px;">
-                <img src="https://unsplash.com" alt="Intérieur du gîte Le Pact">
+            <!-- L'ACCORDÉON DE PORTFOLIO ANIMÉ AUTOMATIQUE -->
+            <div class="accordion-container" id="portfolio-accordion">
+                
+                <!-- Case 1 (Active par défaut au démarrage) -->
+                <div class="accordion-item active">
+                    <img src="assets/photos/salon.jpg" alt="Le Salon" onerror="this.src='https://unsplash.com'">
+                    <div class="accordion-caption">
+                        <h3>Le Salon</h3>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="accordion-item">
+                    <img src="assets/photos/cuisine.jpg" alt="La Cuisine" onerror="this.src='https://unsplash.com'">
+                    <div class="accordion-caption">
+                        <h3>La Cuisine</h3>
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="accordion-item">
+                    <img src="assets/photos/chambre.jpg" alt="Les Chambres" onerror="this.src='https://unsplash.com'">
+                    <div class="accordion-caption">
+                        <h3>Les Chambres</h3>
+                    </div>
+                </div>
+
+                <!-- Case 4 -->
+                <div class="accordion-item">
+                    <img src="assets/photos/billard.jpg" alt="Salle de Jeux" onerror="this.src='https://unsplash.com'">
+                    <div class="accordion-caption">
+                        <h3>Salle de Jeux</h3>
+                    </div>
+                </div>
+
+                <!-- Case 5 -->
+                <div class="accordion-item">
+                    <img src="assets/photos/sport.jpg" alt="Salle de Sport" onerror="this.src='https://unsplash.com'">
+                    <div class="accordion-caption">
+                        <h3>Salle de Sport</h3>
+                    </div>
+                </div>
+
             </div>
         </div>
+
+        <!-- APPEL DU SCRIPT EXTERNE EXTRÉMITÉ -->
+        <script src="assets/js/accordion.js"></script>
     </section>
 
     <!-- Section Espace Bien-être (Avec intégration des photos pour chaque élément) -->
