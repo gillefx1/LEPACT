@@ -1,4 +1,3 @@
-```javascript
 /**
  * @filesource       /assets/js/accordion.js
  * @description      Gestion dynamique multi-accordéons responsive (Mobile-first)
@@ -43,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Événements pour ordinateur (survol) et mobile (tactile)
         items.forEach((item, index) => {
-            // Entrée de la souris ou tap tactile
             const handleInteraction = () => {
                 stopCycle();
                 activateItem(index);
@@ -52,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
             item.addEventListener('mouseenter', handleInteraction);
             item.addEventListener('touchstart', handleInteraction, { passive: true });
 
-            // Sortie de la souris
             item.addEventListener('mouseleave', () => {
                 startCycle();
             });
