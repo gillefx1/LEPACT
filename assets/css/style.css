@@ -47,10 +47,31 @@ nav a:hover, nav a.active { color: #1c1917; border-bottom: 2px solid #1c1917; pa
 .btn-submit { background-color: #1c1917; color: #ffffff; border: none; padding: 14px 28px; width: 100%; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 2px; cursor: pointer; transition: background 0.2s; }
 .btn-submit:hover { background-color: #44403c; }
 
-/* Centrage et structure Smoobu corrigés */
-.smoobu-container { display: flex; justify-content: center; width: 100%; }
-.smoobu-wrapper { width: 100%; max-w: 1000px; margin: 0 auto; background-color: #ffffff; padding: 15px; border-radius: 4px; border: 1px solid #e7e5e4; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); }
-.smoobu-wrapper iframe { width: 100% !important; border: none !important; background: transparent !important; min-height: 650px; margin: 0 auto; display: block; }
+/* Centrage et structure Smoobu ajustés (Cadre blanc réduit) */
+.smoobu-container { 
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    padding: 0 10px; /* Évite que le cadre ne colle aux bords de l'écran sur mobile */
+}
+.smoobu-wrapper { 
+    width: 100%; 
+    max-width: 900px; /* Aligné sur la largeur de la barre de recherche */
+    margin: 0 auto; 
+    background-color: #ffffff; 
+    padding: 15px; /* Espace intérieur fin et discret autour du module */
+    border-radius: 4px; 
+    border: 1px solid #e7e5e4; 
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); /* Ombre plus légère et moderne */
+}
+.smoobu-wrapper iframe { 
+    width: 100% !important; 
+    border: none !important; 
+    background: transparent !important; 
+    min-height: 120px; /* Hauteur minimale réduite pour coller à la barre de recherche */
+    margin: 0 auto; 
+    display: block; 
+}
 
 /* Footer */
 footer { background-color: #1c1917; color: #a8a29e; padding: 60px 0; font-size: 14px; }
