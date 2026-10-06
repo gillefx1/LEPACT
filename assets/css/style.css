@@ -236,3 +236,62 @@ footer a:hover { color: #ffffff; }
         flex: 3;
     }
 }
+/* ==========================================================================
+   MENU DE NAVIGATION BASSE FIXE (SPÉCIAL SMARTPHONE)
+   ========================================================================== */
+.mobile-nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #ffffff;
+    border-top: 1px solid #e7e5e4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.mobile-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #57534e;
+    font-size: 11px;
+    font-weight: 500;
+    text-decoration: none;
+    flex: 1;
+    height: 100%;
+    transition: color 0.2s;
+}
+
+.mobile-nav-item span.icon {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.mobile-nav-item:hover, .mobile-nav-item.active {
+    color: #1c1917;
+    font-weight: 600;
+}
+
+/* On masque complètement cette barre sur iPad, Tablettes et Ordinateurs */
+@media (min-width: 768px) {
+    .mobile-nav-bar {
+        display: none !important;
+    }
+    /* On rajoute une marge en bas du body sur mobile pour ne pas cacher le footer */
+    body {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-bottom: 60px; /* Évite que le menu ne cache le bas des pages */
+    }
+}
+
